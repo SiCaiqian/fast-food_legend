@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://8fys1mswxb58"]
+
+[ext_resource type="Script" uid="uid://b5e3be8uv6pj" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://coij8gqexsam8" path="res://assets/imgs/小店贴图.jpg" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://dwcxrdid66mp3" path="res://assets/imgs/收银台.png" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://d23nlcvb4rht3" path="res://food.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://d165c2c5l2k8a" path="res://client.tscn" id="5_lquwl"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_1bvp3")
+
+[node name="小店贴图" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(2.26549, 2)
+texture = ExtResource("1_ig7tw")
+
+[node name="收银台" type="Sprite2D" parent="."]
+position = Vector2(639.875, 468.75)
+scale = Vector2(0.319983, 0.126692)
+texture = ExtResource("2_0xm2m")
+
+[node name="Food" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(1320, -168)
+
+[node name="Client" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(1552, 64)
+
+[node name="StartTimer" type="Timer" parent="."]
+
+[node name="ClientTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="ClientTimer" to="." method="_on_client_timer_timeout"]
