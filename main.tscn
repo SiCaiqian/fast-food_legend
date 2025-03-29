@@ -8,6 +8,7 @@
 
 [node name="Main" type="Node"]
 script = ExtResource("1_1bvp3")
+client_scence = ExtResource("5_lquwl")
 
 [node name="小店贴图" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
@@ -20,13 +21,14 @@ scale = Vector2(0.319983, 0.126692)
 texture = ExtResource("2_0xm2m")
 
 [node name="Food" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(1320, -168)
-
-[node name="Client" parent="." instance=ExtResource("5_lquwl")]
-position = Vector2(1552, 64)
+position = Vector2(96, 80)
 
 [node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
 
 [node name="ClientTimer" type="Timer" parent="."]
+wait_time = 3.0
 
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="timeout" from="ClientTimer" to="." method="_on_client_timer_timeout"]
