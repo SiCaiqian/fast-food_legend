@@ -6,13 +6,8 @@ var scence_size	#屏幕尺寸（防止实例被拖拽出屏幕范围）
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	
-	## 调试信号是否连接成功
-	#print("信号连接状态: ", input_event.is_connected(_on_input_event))
-	
 	scence_size = get_viewport_rect().size
-	
-	pass
+	#pass
 	
 func _physics_process(_delta: float) -> void:
 	if _is_dragging:
@@ -46,10 +41,10 @@ func _drag():
 #	限制拖拽范围在屏幕内
 	position = position.clamp(Vector2.ZERO, scence_size)
 
-# 待优化： 添加鼠标悬停视觉效果_悬停
+# 待优化： 添加鼠标悬停视觉效果_悬停期间
 func _on_mouse_entered() -> void:
 	pass # Replace with function body.
 
-# 待优化： 添加鼠标悬停视觉效果_离开
+# 待优化： 添加鼠标悬停视觉效果_悬停结束
 func _on_mouse_exited() -> void:
 	pass # Replace with function body.
