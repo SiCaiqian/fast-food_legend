@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc14gep0df2d"]
+
+[ext_resource type="Script" uid="uid://er2a6lnaieh5" path="res://assets/script/order_window.gd" id="1_57er2"]
+[ext_resource type="PackedScene" uid="uid://d165c2c5l2k8a" path="res://assets/scence/client.tscn" id="2_aod73"]
+
+[node name="OrderWindow" type="Node2D"]
+script = ExtResource("1_57er2")
+client_scence = ExtResource("2_aod73")

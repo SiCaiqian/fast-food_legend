@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4jw3j87fpasa"]
+
+[ext_resource type="Texture2D" uid="uid://b2peq8rpxwenk" path="res://assets/imgs/icon.svg" id="2_5rgpn"]
+
+[sub_resource type="GDScript" id="GDScript_gf172"]
+script/source = "extends Node2D
+var tween = Tween.new()
+#add_child(tween)
+"
+
+[node name="Node" type="Node"]
+script = SubResource("GDScript_gf172")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5rgpn")

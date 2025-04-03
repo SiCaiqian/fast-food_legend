@@ -4,8 +4,10 @@ var order_position
 @export var move_speed := 300.0
 var favorite_food	# 喜欢的食物
 
+var client_tween
+
 func _ready() -> void:
-	pass
+	client_tween = get_tree().create_tween()
 
 # 初始化实例初始位置信息与目标位置信息
 func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left: bool):
@@ -29,8 +31,7 @@ func _process(delta: float) -> void:
 #	第二阶段：实例从窗口上方位置向下移动至窗口
 	if position.x == order_position.x:
 		position = position.move_toward(order_position, move_speed * delta)
-		var scale_val = 2 + 1 * delta
-		$AnimatedSprite2D.scale = Vector2(scale_val, scale_val)
+		#client_tween.tween_
 #	注意！还在开发：到达指定窗口后的具体行为
 	if position == order_position:
 		#queue_free()
