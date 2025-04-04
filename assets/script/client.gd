@@ -1,35 +1,46 @@
 extends Area2D
 	
-var order_position
+var order_position	# 订餐位置
+var spawn_left: bool	# 实例朝向
 @export var move_speed := 200.0
 var favorite_food	# 喜欢的食物
 
+var client_tween
+
 func _ready() -> void:
-	pass
+	client_tween = get_tree().create_tween()
 
 # 初始化实例初始位置信息与目标位置信息
-func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left: bool):
+func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left_p: bool):
+#	初始化实例生成位置
 	position = start_pos
+#	初始化订餐位置
 	order_position = end_pos
+#	初始化实例方向
+	spawn_left = spawn_left_p
 	
+#	根据实例方向播放对应行走动画
 	if spawn_left:
 		$AnimatedSprite2D.play("walk_right")
 	else:
 		$AnimatedSprite2D.play("walk_left")
+	
+	client_tween.tween_property(self, "position", Vector2(order_position.x, position.y), 3)
+	client_tween.tween_callback(func():
+		$AnimatedSprite2D.play("walk_front")
+		)
+	client_tween.tween_property(self, "position", order_position, 1)
+	client_tween.tween_callback(func ():
+		$AnimatedSprite2D.play("idle")
+	)
 
 func _process(delta: float) -> void:
 	if not order_position:
 		print("未正确设置目标订餐窗口！")
 		return
-	
-#	将实例移动至指定的订餐窗口
-	position = position.move_toward(Vector2(order_position.x, position.y), move_speed * delta)
-	if position.x == order_position.x:
-		position = position.move_toward(order_position, move_speed * delta)
-		
-#	注意！还在开发：到达指定窗口后的具体行为
-	if position == order_position:
-		pass
+##	注意！还在开发：到达指定窗口后的具体行为
+	#if position == order_position:
+		#pass
 
 func _physics_process(delta: float) -> void:
 	pass
