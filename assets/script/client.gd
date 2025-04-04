@@ -30,7 +30,7 @@ func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left_p: bool):
 	else:
 		$AnimatedSprite2D.play("walk_left")
 	
-	client_tween.tween_property(self, "position", Vector2(order_position.x, position.y), 3)
+	client_tween.tween_property(self, "position", Vector2(order_position.x, position.y), randi() % 3 + 2)
 	client_tween.tween_callback(func():
 		$AnimatedSprite2D.play("walk_front")
 		)

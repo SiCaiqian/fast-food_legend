@@ -18,7 +18,7 @@ func _physics_process(_delta: float) -> void:
 	if _is_dragging:
 		_drag()
 
-# 根据 _input_event信号 提供鼠标拖拽交互信号
+# 根据 _input_event信号 提供鼠标拖拽交互许可
 func _on_input_event(_viewport ,event, _shape_idx):
 #	检测鼠标点击事件
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:

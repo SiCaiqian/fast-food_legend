@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://8fys1mswxb58"]
+[gd_scene load_steps=10 format=3 uid="uid://8fys1mswxb58"]
 
 [ext_resource type="Script" uid="uid://b5e3be8uv6pj" path="res://assets/script/main.gd" id="1_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://coij8gqexsam8" path="res://assets/imgs/小店贴图.jpg" id="1_ig7tw"]
@@ -6,6 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://d23nlcvb4rht3" path="res://assets/scence/food.tscn" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://cq0xn4elyrdsf" path="res://assets/scence/order_window.gd" id="4_gmgkc"]
 [ext_resource type="PackedScene" uid="uid://d165c2c5l2k8a" path="res://assets/scence/client.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://dnwck265g2l23" path="res://assets/scence/hud.tscn" id="7_olo4i"]
+[ext_resource type="Texture2D" uid="uid://b2peq8rpxwenk" path="res://assets/imgs/icon.svg" id="8_d7u6k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7u6k"]
+size = Vector2(118, 120)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_1bvp3")
@@ -44,6 +49,26 @@ position = Vector2(96, 80)
 [node name="StartTimer" type="Timer" parent="."]
 wait_time = 2.0
 one_shot = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.2, 0.247059, 0.345098, 1)
+
+[node name="HUD" parent="." instance=ExtResource("7_olo4i")]
+visible = false
+
+[node name="Workbench" type="Area2D" parent="."]
+position = Vector2(133, 626)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Workbench"]
+modulate = Color(0.933333, 0.52549, 0.584314, 1)
+texture = ExtResource("8_d7u6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Workbench"]
+shape = SubResource("RectangleShape2D_d7u6k")
 
 [connection signal="fullhouse" from="OrderWindow1" to="." method="_on_order_window_1_fullhouse"]
 [connection signal="timeout" from="OrderWindow1/ClientTimer1" to="." method="_on_order_window_1_client_generate"]
