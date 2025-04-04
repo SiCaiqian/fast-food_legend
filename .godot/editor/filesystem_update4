@@ -1,0 +1,9 @@
+res://client.gd
+res://assets/scence/client.tscn
+res://assets/script/client.gd
+res://assets/script/人物列表.txt
+res://assets/scence/main.tscn
+res://assets/scence/order_window.gd
+res://assets/script/main.gd
+res://assets/scence/food.tscn
+res://assets/script/任务列表.txt
