@@ -1,28 +1,93 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743760773
+::res://::1743783408
 README.md::TextFile/TextFile::-1::1743169680::0::1::::<><><>0<>0<><>::
 ::res://assets/::1743754719
 ::res://assets/fonts/::1743754730
 萝莉体.TTF::FontFile/FontFile::1309417296788437370::1743754730::1743754730::1::::<><><>0<>0<>07e2e94181b41b6a943ceaa5c1a33a2e<>res://.godot/imported/萝莉体.TTF-b35203557963b506d493c569a0e8c5f8.fontdata::
-::res://assets/imgs/::1743758062
-Bread_under.png::CompressedTexture2D/CompressedTexture2D::7594853616992556237::1743757980::1743757981::1::::<><><>0<>0<>f8beb3e30122cd1b22f67d62d1daaa61<>res://.godot/imported/Bread_under.png-7a5396e0ecb7f53f28329954197decb1.ctex::
-Bread_upper.png::CompressedTexture2D/CompressedTexture2D::1803714209847531347::1743757980::1743757981::1::::<><><>0<>0<>17e887e8fd050366df868b611755c334<>res://.godot/imported/Bread_upper.png-4a167f95162ae0263b0ec86af1860dc0.ctex::
-client_sprite.png::CompressedTexture2D/CompressedTexture2D::6406419031470745434::1743740013::1743740035::1::::<><><>0<>0<>a4e3626bdfe641b921fd51afb1330c61<>res://.godot/imported/client_sprite.png-9474a4e7a7dd1e7a1fdfa2a5573e1ae1.ctex::
-hamburger.png::CompressedTexture2D/CompressedTexture2D::6390457111187822567::1743758062::1743758062::1::::<><><>0<>0<>3ecd6f069be071e6b2c58830c95a8cfc<>res://.godot/imported/hamburger.png-cc53c80665db9a2326192cfdc291caa3.ctex::
-icon.svg::CompressedTexture2D/CompressedTexture2D::4312758329149782932::1742712318::1743739811::1::::<><><>0<>0<>4e10e782b48632cfe79bd5fbd2f020e9<>res://.godot/imported/icon.svg-bd7ed1d275a10dedb0b6f0ef012d3815.ctex::
-lettuce.png::CompressedTexture2D/CompressedTexture2D::6455215536282853050::1743757980::1743757981::1::::<><><>0<>0<>c03bbe0527f64b57370a2ce5243f9cd7<>res://.godot/imported/lettuce.png-23eba5071e350d37d91e3f1d8573b15b.ctex::
-meat pie.png::CompressedTexture2D/CompressedTexture2D::4225341652066472376::1743757980::1743757981::1::::<><><>0<>0<>57bca462ca7a17541aba784f735805ff<>res://.godot/imported/meat pie.png-fa381fb0411af7068ce785dced18da28.ctex::
-小店贴图.jpg::CompressedTexture2D/CompressedTexture2D::5772605924555050297::1742827237::1743739811::1::::<><><>0<>0<>bac2f9879bcf51c44735de4b1b08337a<>res://.godot/imported/小店贴图.jpg-3ac4ba84142bf026e977fce0db582ca5.s3tc.ctex::
-收银台.png::CompressedTexture2D/CompressedTexture2D::8708972386061598354::1742827527::1743739812::1::::<><><>0<>0<>ff350467766191eb2db255d5637f8b30<>res://.godot/imported/收银台.png-e95e00c50908de44606e0a4a13450840.s3tc.ctex::
-::res://assets/scence/::1743760710
-client.tscn::PackedScene::9049994200013700946::1743758292::0::1::::<><><>0<>0<><>::uid://blslnefv2c5sj::::res://assets/script/client.gd<>uid://cxjk1x8w4dqbq::::res://assets/imgs/client_sprite.png
-food.tscn::PackedScene::9112972508631228278::1743758563::0::1::::<><><>0<>0<><>::uid://d06bdpppyvjuv::::res://assets/script/food.gd<>uid://cxbt5otwlqkxb::::res://assets/imgs/hamburger.png
-hud.tscn::PackedScene::8117274088279167510::1743758292::0::1::::<><><>0<>0<><>::uid://swj581lum61k::::res://assets/fonts/萝莉体.TTF
-main.tscn::PackedScene::2328044465934950777::1743760710::0::1::::<><><>0<>0<><>::uid://b5e3be8uv6pj::::res://assets/script/main.gd<>uid://coij8gqexsam8::::res://assets/imgs/小店贴图.jpg<>uid://dwcxrdid66mp3::::res://assets/imgs/收银台.png<>uid://d23nlcvb4rht3::::res://assets/scence/food.tscn<>uid://cq0xn4elyrdsf::::res://assets/scence/order_window.gd<>uid://d165c2c5l2k8a::::res://assets/scence/client.tscn<>uid://dnwck265g2l23::::res://assets/scence/hud.tscn<>uid://b2peq8rpxwenk::::res://assets/imgs/icon.svg
-order_window.gd::GDScript::5948893545489512797::1743760710::0::1::::<>Node2D<><>0<>0<><>::
-::res://assets/script/::1743758563
-client.gd::GDScript::3196348084333489541::1743758291::0::1::::<>Area2D<><>0<>0<><>::
-food.gd::GDScript::8978045738517205289::1743758563::0::1::::<>Area2D<><>0<>0<><>::
+::res://assets/imgs/::1743783423
+::res://assets/imgs/client_sprite/::1743783364
+client_sprite.png::CompressedTexture2D/CompressedTexture2D::6406419031470745434::1743740013::1743783364::1::::<><><>0<>0<>75e05afc8309c888e026c0bbf8e2a1f4<>res://.godot/imported/client_sprite.png-5b7959794c6f4170dd95107e8f444b45.ctex::
+::res://assets/imgs/作业工具/::1743783423
+刀.png::CompressedTexture2D::7926592507663827826::1743783423::1743783424::1::::<><><>0<>0<>c7e08fd64f4eb98867810dd80446c704<>res://.godot/imported/刀.png-d53f80e508fc0783bc01abcfa9c10b37.ctex::
+汉堡皮陈列区.png::CompressedTexture2D::1727982008204054941::1743783423::1743783424::1::::<><><>0<>0<>117ebd83c1812dea2de57ca3b4966661<>res://.godot/imported/汉堡皮陈列区.png-7d60dc22c2f37026782110edb4bb3d82.ctex::
+沙拉酱.png::CompressedTexture2D::5009783985428740304::1743783423::1743783424::1::::<><><>0<>0<>193aa4a9bf578ae280e21bcf61667efc<>res://.godot/imported/沙拉酱.png-f5bebcfcc60e74ba6f3fa5de6c1827de.ctex::
+煎锅.png::CompressedTexture2D::3302786128526302263::1743783423::1743783424::1::::<><><>0<>0<>582fa70e28f5aad94a6ccfed574c65e6<>res://.godot/imported/煎锅.png-161009c925e6dfb9dfcae20c214965dc.ctex::
+煎饼包装.png::CompressedTexture2D::5301108136415287073::1743783423::1743783424::1::::<><><>0<>0<>9086e58baff1b87c25198f271eedac28<>res://.godot/imported/煎饼包装.png-993838a0cb2b268b6d759b4436d923e5.ctex::
+生菜桶.png::CompressedTexture2D::6326766789948213318::1743783423::1743783424::1::::<><><>0<>0<>f6ca0220629195511a1575686192b488<>res://.godot/imported/生菜桶.png-fd07a3e5f2a9b5844beb71cbd5800fa9.ctex::
+番茄酱.png::CompressedTexture2D::8682316284722848250::1743783423::1743783424::1::::<><><>0<>0<>e7e3ad9ba4888268a175f07f2a6248c4<>res://.godot/imported/番茄酱.png-621157a9b32ef04ed9cc4861aa7b1c41.ctex::
+芝士盘子.png::CompressedTexture2D::3043801846759772229::1743783423::1743783424::1::::<><><>0<>0<>566d82cdcd1ef9eb771d985dea1937a8<>res://.godot/imported/芝士盘子.png-c13d134b424ddc43879cd2bca3b126d9.ctex::
+菜板.png::CompressedTexture2D::8943767840408685580::1743783423::1743783424::1::::<><><>0<>0<>c160a43690180ceebe2c1ef09598d302<>res://.godot/imported/菜板.png-1ebc44ac8716544193b149441a651687.ctex::
+酸黄瓜 剩余1.png::CompressedTexture2D::2116442110326913743::1743783423::1743783424::1::::<><><>0<>0<>a1264d185a3906209f99578c6d46091f<>res://.godot/imported/酸黄瓜 剩余1.png-7d46f4bc68903ea5077e5967edc90280.ctex::
+酸黄瓜 剩余2.png::CompressedTexture2D::6677898862787388627::1743783423::1743783424::1::::<><><>0<>0<>619b6ef4ba07665a6efb58911c70a434<>res://.godot/imported/酸黄瓜 剩余2.png-18988f4d3d18a4880d7d6023c222afec.ctex::
+酸黄瓜 剩余3.png::CompressedTexture2D::1857387619943206694::1743783423::1743783424::1::::<><><>0<>0<>f381ce710d782b6082ac38de84e8629a<>res://.godot/imported/酸黄瓜 剩余3.png-525c6978674ba58a7e49a559e9b5e599.ctex::
+::res://assets/imgs/作业正交特写/::1743783424
+汉堡 组装1.png::CompressedTexture2D::1247482671553076061::1743783423::1743783424::1::::<><><>0<>0<>4acfa02686f2351a49a5c27e40436d41<>res://.godot/imported/汉堡 组装1.png-b3e6b4fd4c47e6d86de1beee4804def6.ctex::
+汉堡 组装2.png::CompressedTexture2D::8993989229175959021::1743783423::1743783424::1::::<><><>0<>0<>5562ac3b2fab53b42855ace579b129a8<>res://.godot/imported/汉堡 组装2.png-c474c6ddfe7c5defddc1ad6ca95735f9.ctex::
+汉堡 组装3.png::CompressedTexture2D::6018519600705560244::1743783423::1743783424::1::::<><><>0<>0<>f983a3bd48c5d7d0129bf15ec9b80534<>res://.godot/imported/汉堡 组装3.png-a6066113aad09ba55af10136473130c0.ctex::
+汉堡 组装4.png::CompressedTexture2D::3301256446484802281::1743783423::1743783424::1::::<><><>0<>0<>02c7e23274b316bb1ca6b313b7f857c0<>res://.godot/imported/汉堡 组装4.png-a1b42b47064e5e198a276ca0aedb183c.ctex::
+汉堡 组装5.png::CompressedTexture2D::6826555129875891166::1743783423::1743783424::1::::<><><>0<>0<>186439d03f869f921ebf3232427e0cf9<>res://.godot/imported/汉堡 组装5.png-73e471aa32e77efbc0622d1ef96c973f.ctex::
+汉堡 组装6.png::CompressedTexture2D::8283442018865669301::1743783423::1743783424::1::::<><><>0<>0<>5f8d52b0aded88363da7cb05c37dea22<>res://.godot/imported/汉堡 组装6.png-41fbebc65fcc60d5a44888ca8340bc4a.ctex::
+汉堡 组装7.png::CompressedTexture2D::2370262457987937291::1743783423::1743783424::1::::<><><>0<>0<>c7602b7e10298712e2480ce0dfecb603<>res://.godot/imported/汉堡 组装7.png-5c6441fff2dc796392b58fe323e3deda.ctex::
+汉堡 组装8.png::CompressedTexture2D::5798832097035692194::1743783423::1743783424::1::::<><><>0<>0<>989e8670d78f3bf4011964154cb0efbc<>res://.godot/imported/汉堡 组装8.png-f485e20f2ffb75ad105c0338f14f12e6.ctex::
+汉堡肉片 烹饪1.png::CompressedTexture2D::7357654899500619072::1743783423::1743783424::1::::<><><>0<>0<>8be03f4402e2f4956b44a07a0b5f3a56<>res://.godot/imported/汉堡肉片 烹饪1.png-4e90b6584ed204409ae08d2f1a3e49f5.ctex::
+汉堡肉片 烹饪2.png::CompressedTexture2D::990700580145944210::1743783423::1743783424::1::::<><><>0<>0<>c8ae352e7063688e5d3c07d816bd694f<>res://.godot/imported/汉堡肉片 烹饪2.png-64be6b4005219ffe9d0eb6c34da65ba8.ctex::
+汉堡肉片 烹饪3.png::CompressedTexture2D::5849902707824448463::1743783423::1743783424::1::::<><><>0<>0<>afc254939f34b5142bc1b57a82d0b18b<>res://.godot/imported/汉堡肉片 烹饪3.png-2fe399d21f26256a64987892069e182d.ctex::
+汉堡肉片 烹饪4.png::CompressedTexture2D::562983387621796121::1743783423::1743783424::1::::<><><>0<>0<>2f19901a99ff7746979d9bb8c5b18651<>res://.godot/imported/汉堡肉片 烹饪4.png-4938faac99e0f04d7a8abee5c0ff44fb.ctex::
+汉堡肉片 烹饪5.png::CompressedTexture2D::220327304738385109::1743783423::1743783424::1::::<><><>0<>0<>54a35c42622a87093e223adc4d79aa7c<>res://.godot/imported/汉堡肉片 烹饪5.png-dfc2991cc078cacf7c414f3aaef4c42d.ctex::
+汉堡肉片 烹饪6.png::CompressedTexture2D::2761524947986027515::1743783423::1743783424::1::::<><><>0<>0<>9b9ad069b66ab6088f806dc1b57cc15a<>res://.godot/imported/汉堡肉片 烹饪6.png-296ffb4276e73e28de9c60d746b8ccba.ctex::
+煎饼果子 包装纸.png::CompressedTexture2D::4472851882045125791::1743783423::1743783424::1::::<><><>0<>0<>fb82f17a06b8ac269bcd3a8547a83872<>res://.godot/imported/煎饼果子 包装纸.png-534f1d6a4a448475767cd6f923e700af.ctex::
+煎饼果子 组装1.png::CompressedTexture2D::3446061631196876732::1743783423::1743783424::1::::<><><>0<>0<>fc7f5729491b795e21266a657f9b24ba<>res://.godot/imported/煎饼果子 组装1.png-058a7fbee65c3e2724067111ed2cba5c.ctex::
+煎饼果子 组装2.png::CompressedTexture2D::6167077496662462996::1743783423::1743783424::1::::<><><>0<>0<>3e9b142cd5dc5b3e675fa1ba8c3b7ad4<>res://.godot/imported/煎饼果子 组装2.png-370e73e593193285b686452a1aa6d5aa.ctex::
+煎饼果子 组装3.png::CompressedTexture2D::39529746744115541::1743783423::1743783424::1::::<><><>0<>0<>9cd7534c40d67f80fbfecfe6940209db<>res://.godot/imported/煎饼果子 组装3.png-9f9933902f49c584a558126802e773b6.ctex::
+煎饼果子 组装4.png::CompressedTexture2D::5062980881691951824::1743783423::1743783424::1::::<><><>0<>0<>d98f62e377bf27cb5aa97bbb1f877fb3<>res://.godot/imported/煎饼果子 组装4.png-ab9ea47791cf78848013e39576125308.ctex::
+煎饼果子 组装5.png::CompressedTexture2D::6868748622978699549::1743783423::1743783424::1::::<><><>0<>0<>6c3d8b95d2d6bf6d2a158ae9ebc69bf3<>res://.godot/imported/煎饼果子 组装5.png-19ea8674d1ba3b36c649f59d95b62249.ctex::
+煎饼果子 组装6.png::CompressedTexture2D::3982361858844688268::1743783423::1743783424::1::::<><><>0<>0<>e57366dcf6ef08b22564de6895a1ca6c<>res://.godot/imported/煎饼果子 组装6.png-1d63c6ab248181cc158943859aa6905f.ctex::
+煎饼果子 组装7.png::CompressedTexture2D::1423643514355002740::1743783423::1743783424::1::::<><><>0<>0<>3ddbaee6d607be03db4bed0274270f56<>res://.godot/imported/煎饼果子 组装7.png-9a2b230da52c3f72bedf1807c629422e.ctex::
+菜刀 正交.png::CompressedTexture2D::4960731133516707724::1743783423::1743783424::1::::<><><>0<>0<>38d810ebdd19ab843d929b0e37af900d<>res://.godot/imported/菜刀 正交.png-9cc38d2b63e987ef1c6a35e8f1699bde.ctex::
+菜板 正交.png::CompressedTexture2D::7916476385543550535::1743783423::1743783424::1::::<><><>0<>0<>6558958aca41b91a387c3f228e1fc644<>res://.godot/imported/菜板 正交.png-0013886328a81785c97b0cbcdedcc2f2.ctex::
+酸黄瓜 切割1.png::CompressedTexture2D::4188489114373582044::1743783424::1743783424::1::::<><><>0<>0<>1500140bb677ff7c0d75971c9e9769c4<>res://.godot/imported/酸黄瓜 切割1.png-0d9c93b7e0eca3501911a5936210d2ad.ctex::
+酸黄瓜 切割2.png::CompressedTexture2D::7956299436629484853::1743783424::1743783424::1::::<><><>0<>0<>80279cb7fa6fb775f0e56a34cc0e1270<>res://.godot/imported/酸黄瓜 切割2.png-82b423ed9871756e68160ce670b5a5bf.ctex::
+酸黄瓜 切割3.png::CompressedTexture2D::3655691792406638057::1743783424::1743783424::1::::<><><>0<>0<>825efa87b4ed20a2ea5d912b2d384a01<>res://.godot/imported/酸黄瓜 切割3.png-0e36a79ed7d578d23d491e2abc545a2e.ctex::
+酸黄瓜 切割4.png::CompressedTexture2D::2849049267014628527::1743783424::1743783424::1::::<><><>0<>0<>e40a21cade08a13e1d9efd88e402d5a6<>res://.godot/imported/酸黄瓜 切割4.png-c1a2aebd5c4f513b70d1492823708655.ctex::
+::res://assets/imgs/作画辅助/::1743783423
+透视线.png::CompressedTexture2D::6904569894471623050::1743783423::1743783425::1::::<><><>0<>0<>13b991e545f5d270e850b714780c2e4e<>res://.godot/imported/透视线.png-b41ac16b2835a9f84244be538b5979f9.ctex::
+::res://assets/imgs/店面/::1743783423
+刀架 纹理.png::CompressedTexture2D::783517780654461940::1743783423::1743783424::1::::<><><>0<>0<>93c356417bb0eb34a5fa75c23881f0f6<>res://.godot/imported/刀架 纹理.png-bd99d9235b53240761a4ad67fec072b3.ctex::
+前台 描线.png::CompressedTexture2D::4351791617704850838::1743783423::1743783425::1::::<><><>0<>0<>45d9719602463a27c1c355b2359b2854<>res://.godot/imported/前台 描线.png-9ec4adb5202d5bd7a95ddfa3260a8d6e.ctex::
+墙面木饰面 纹理.png::CompressedTexture2D::1468917673137028029::1743783423::1743783424::1::::<><><>0<>0<>8f6f197c4d335237b40c032664f57e25<>res://.godot/imported/墙面木饰面 纹理.png-4971951a4e144778eebddc2dfe78c0a1.ctex::
+大理石墙面 纹理.png::CompressedTexture2D::6597696511665200305::1743783423::1743783425::1::::<><><>0<>0<>7273b4acd782f12a630688ab56405573<>res://.godot/imported/大理石墙面 纹理.png-dfb83706432f5bfad7a1cfc262fdda70.ctex::
+大理石桌面 纹理.png::CompressedTexture2D::7937484510387731100::1743783423::1743783425::1::::<><><>0<>0<>0375afebe4d31c82090308813d61ebd1<>res://.godot/imported/大理石桌面 纹理.png-f8760d681c3cc53c207effe867bcf6c5.ctex::
+天花板 纹理.png::CompressedTexture2D::944650795003202801::1743783423::1743783425::1::::<><><>0<>0<>d70147f7de04f5496e9cc1f8483a87c7<>res://.godot/imported/天花板 纹理.png-f5ae8c8b6ac6fbee5a7ef80f34d3be49.ctex::
+架子 纹理.png::CompressedTexture2D::8834617648814572201::1743783423::1743783425::1::::<><><>0<>0<>39b28620c27667e8e04c9ae7c3319ccf<>res://.godot/imported/架子 纹理.png-2103d794c0ae0f5c70d9d6876c382045.ctex::
+桌下木饰面 纹理.png::CompressedTexture2D::1729746450336680821::1743783423::1743783424::1::::<><><>0<>0<>c6dc930ee5fd2636bfd54a815595acc1<>res://.godot/imported/桌下木饰面 纹理.png-14eede35ef87fa2ca19c0dc442037043.ctex::
+汉堡装填区.png::CompressedTexture2D::5737152329652694512::1743783423::1743783424::1::::<><><>0<>0<>2a4cd01c78cb99980941914acb79c1bd<>res://.godot/imported/汉堡装填区.png-5c8da5d466776050459b766b100b0ee9.ctex::
+门帘.png::CompressedTexture2D::6402365332654296905::1743783423::1743783425::1::::<><><>0<>0<>d7b1027ab0482fbd6ff823915a22b97f<>res://.godot/imported/门帘.png-da5e2de5dc2da73282edcd909d99c473.ctex::
+顶灯.png::CompressedTexture2D::9048280231148458701::1743783423::1743783424::1::::<><><>0<>0<>318452e7b572847201470ff60c020232<>res://.godot/imported/顶灯.png-92810ef5022772c7012b2a6a081e7e62.ctex::
+::res://assets/imgs/拖拽素材/::1743783423
+汉堡肉片.png::CompressedTexture2D::6835217835086175690::1743783423::1743783424::1::::<><><>0<>0<>9fbd5648e14e2a4ecaf11ab390d1d748<>res://.godot/imported/汉堡肉片.png-9616ab0ce239c640c1531f8535edba39.ctex::
+煎饼.png::CompressedTexture2D::7636094376399879643::1743783423::1743783424::1::::<><><>0<>0<>853e5873c30aa19432c6eace5f9c42be<>res://.godot/imported/煎饼.png-15fcbf13a72b619d9f9a60257122b430.ctex::
+生菜.png::CompressedTexture2D::5360498704932460820::1743783423::1743783424::1::::<><><>0<>0<>6f0b37a941454ce957050d7a540ebb1c<>res://.godot/imported/生菜.png-d14b73ecda900f26a3577aa8712a41a5.ctex::
+::res://assets/imgs/测试贴图/::1743783409
+icon.svg::CompressedTexture2D/CompressedTexture2D::4312758329149782932::1742712318::1743783387::1::::<><><>0<>0<>e5d8b89f0a7e6c9b95fbf903e7ffa636<>res://.godot/imported/icon.svg-e84b0b49e15ed5736196e849e63f42c6.ctex::
+小店贴图.jpg::CompressedTexture2D::5772605924555050297::1742827237::1743783409::1::::<><><>0<>0<>e009dd607390bf5da153e604a3e57119<>res://.godot/imported/小店贴图.jpg-bcc0715066e18d999bb7f3b08487fe91.s3tc.ctex::
+收银台.png::CompressedTexture2D::8708972386061598354::1742827527::1743783409::1::::<><><>0<>0<>ff29c5b1c319b8cced8c55226149a4df<>res://.godot/imported/收银台.png-db8bd5e21cadcaf17dfccc1248c7df40.s3tc.ctex::
+::res://assets/imgs/测试贴图/食品组装/::1743783402
+Bread_under.png::CompressedTexture2D/CompressedTexture2D::7594853616992556237::1743757980::1743783402::1::::<><><>0<>0<>7644364d6b3ffc5a02fa2c3476ec1820<>res://.godot/imported/Bread_under.png-315b643b1f86b1910f1c148ad826aaf7.ctex::
+Bread_upper.png::CompressedTexture2D/CompressedTexture2D::1803714209847531347::1743757980::1743783402::1::::<><><>0<>0<>e8466d0b840608ae32293f172ab74bc8<>res://.godot/imported/Bread_upper.png-cb4e89da0321de98514bf2c125351fa4.ctex::
+hamburger.png::CompressedTexture2D/CompressedTexture2D::6390457111187822567::1743758062::1743783402::1::::<><><>0<>0<>fa21d6a5591393481bf6c012fc08f846<>res://.godot/imported/hamburger.png-8fabad66b0f955cf2612334b5e9923c2.ctex::
+lettuce.png::CompressedTexture2D/CompressedTexture2D::6455215536282853050::1743757980::1743783402::1::::<><><>0<>0<>3dd3f3605e563de125bce2fbf2d6438d<>res://.godot/imported/lettuce.png-244f9c8ad1cf3ccc62add4fa2635c163.ctex::
+meat pie.png::CompressedTexture2D/CompressedTexture2D::4225341652066472376::1743757980::1743783402::1::::<><><>0<>0<>b35c9ea2a694286e29f9545b6bf30ebb<>res://.godot/imported/meat pie.png-ccbd89d0750cc90cb477c82093c120cd.ctex::
+::res://assets/imgs/背景/::1743783423
+外景 贴图.png::CompressedTexture2D::8572715753525157920::1743783423::1743783425::1::::<><><>0<>0<>89bfc901edcb55bff9ce7f72a39c21e2<>res://.godot/imported/外景 贴图.png-6d8f726a0e77cbc5ad27cf5b6605a22d.ctex::
+总背景.png::CompressedTexture2D::4908960035367827296::1743783423::1743783426::1::::<><><>0<>0<>2881a4f1beefdec92555000a65d15d61<>res://.godot/imported/总背景.png-b5824f9e8b43ff94acd8be0c5f6bcadc.ctex::
+::res://assets/scence/::1743783418
+client.tscn::PackedScene/PackedScene::9049994200013700946::1743783364::0::1::::<><><>0<>0<><>::uid://blslnefv2c5sj::::res://assets/script/client.gd<>uid://cxjk1x8w4dqbq::::res://assets/imgs/client_sprite/client_sprite.png
+food.tscn::PackedScene/PackedScene::9112972508631228278::1743783402::0::1::::<><><>0<>0<><>::uid://d06bdpppyvjuv::::res://assets/script/food.gd<>uid://cxbt5otwlqkxb::::res://assets/imgs/测试贴图/食品组装/hamburger.png
+hud.tscn::PackedScene/PackedScene::8117274088279167510::1743771376::0::1::::<><><>0<>0<><>::uid://swj581lum61k::::res://assets/fonts/萝莉体.TTF
+main.tscn::PackedScene::2328044465934950777::1743783418::0::1::::<><><>0<>0<><>::uid://b5e3be8uv6pj::::res://assets/script/main.gd<>uid://coij8gqexsam8::::res://assets/imgs/测试贴图/小店贴图.jpg<>uid://dwcxrdid66mp3::::res://assets/imgs/测试贴图/收银台.png<>uid://d23nlcvb4rht3::::res://assets/scence/food.tscn<>uid://cq0xn4elyrdsf::::res://assets/scence/order_window.gd<>uid://d165c2c5l2k8a::::res://assets/scence/client.tscn<>uid://dnwck265g2l23::::res://assets/scence/hud.tscn<>uid://b2peq8rpxwenk::::res://assets/imgs/测试贴图/icon.svg
+order_window.gd::GDScript/GDScript::5948893545489512797::1743783364::0::1::::<>Node2D<><>0<>0<><>::
+::res://assets/script/::1743771953
+client.gd::GDScript/GDScript::3196348084333489541::1743758291::0::1::::<>Area2D<><>0<>0<><>::
+food.gd::GDScript/GDScript::8978045738517205289::1743771573::0::1::::<>Area2D<><>0<>0<><>::
 main.gd::GDScript/GDScript::132413106689753867::1743748198::0::1::::<>Node<><>0<>0<><>::
-任务列表.txt::TextFile::-1::1743754416::0::1::::<><><>0<>0<><>::
-更新笔记.txt::TextFile::-1::1743758530::0::1::::<><><>0<>0<><>::
+任务列表.txt::TextFile/TextFile::-1::1743771953::0::1::::<><><>0<>0<><>::

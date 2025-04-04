@@ -1,9 +1,4 @@
-res://assets/scence/main.tscn
-res://assets/scence/order_window.gd
-res://assets/script/任务列表.txt
-res://assets/scence/hud.tscn
 res://assets/scence/client.tscn
+res://assets/scence/order_window.gd
+res://assets/scence/main.tscn
 res://assets/scence/food.tscn
-res://assets/script/client.gd
-res://assets/script/更新笔记.txt
-res://assets/script/food.gd

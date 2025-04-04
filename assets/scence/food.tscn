@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d23nlcvb4rht3"]
 
 [ext_resource type="Script" uid="uid://d06bdpppyvjuv" path="res://assets/script/food.gd" id="1_pohk7"]
-[ext_resource type="Texture2D" uid="uid://cxbt5otwlqkxb" path="res://assets/imgs/hamburger.png" id="2_2qnpb"]
+[ext_resource type="Texture2D" uid="uid://cxbt5otwlqkxb" path="res://assets/imgs/测试贴图/食品组装/hamburger.png" id="2_2qnpb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pohk7"]
 size = Vector2(108, 104)
