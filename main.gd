@@ -3,17 +3,20 @@ extends Node
 @export var client_scence: PackedScene
 var scence_size
 
+
+var order_window_x_dic = {
+	"win0": 920,
+	"win1": 656,
+	"win2": 296
+}
+var order_window_y = 400
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 #	获取屏幕尺寸
 	scence_size	= get_viewport().get_visible_rect().size
-	
-##	设置订餐窗口坐标
-	#$OrderWindow1.position = Vector2(320, 400)
-	#$OrderWindow2.position = Vector2(640, 400)
-	#$OrderWindow3.position = Vector2(960, 400)
-		#
 	$StartTimer.start()
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -26,30 +29,28 @@ func _input(event: InputEvent) -> void:
 			print("esc")
 
 func _on_start_timer_timeout() -> void:
-	$OrderWindow1/ClientTimer1.start()
-	$OrderWindow2/ClientTimer2.start()
-	$OrderWindow3/ClientTimer3.start()
-
-# 当 1号窗口 满客时停止在该窗口生成顾客
-func _on_order_window_1_fullhouse() -> void:
-	$OrderWindow1/ClientTimer1.stop()
-
-# 当 2号窗口 满客时停止在该窗口生成顾客
-func _on_order_window_2_fullhouse() -> void:
-	$OrderWindow2/ClientTimer2.stop()
+	$ClientTimer.start()
 	
-# 当 3号窗口 满客时停止在该窗口生成顾客
-func _on_order_window_3_fullhouse() -> void:
-	$OrderWindow3/ClientTimer3.stop()
-
-
-func _on_client_timer_1_timeout() -> void:
-	$OrderWindow1.client_generator(Vector2(320, 400))
-
-
-func _on_client_timer_2_timeout() -> void:
-	$OrderWindow2.client_generator(Vector2(640, 400))
-
-
-func _on_client_timer_3_timeout() -> void:
-	$OrderWindow3.client_generator(Vector2(960, 400))
+# 注意！还在开发：顾客生成器
+# 根据 ClientTImer计时器 的 _timer_timeout信号 周期性生成 Client场景 实例
+func _on_client_timer_timeout() -> void:
+	var client = client_scence.instantiate()
+	
+	var spawn_left = randi() % 2
+	
+#	随即决定一个生成位置
+	var spawn_pos = Vector2(
+#		x轴上确保实例在屏幕外生成
+		-50 if spawn_left else scence_size.x + 50,
+#		y轴上随机高度生成
+		randf_range(50, scence_size.y - 50)
+	)
+	
+#	随机选定一个订餐窗口
+	var order_pos = Vector2(
+		order_window_x_dic["win" +  str(randi() % 3)],
+		order_window_y
+	)
+	
+	add_child(client)
+	client.initialize(spawn_pos, order_pos)

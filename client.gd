@@ -1,22 +1,28 @@
 extends Area2D
 	
 var order_position
-@export var move_speed := 300.0
+@export var move_speed := 100.0
 var favorite_food	# 喜欢的食物
+var status_index	# 动画状态索引
+var status_array	# 动画状态列表
 
 func _ready() -> void:
+##	获取动画列表
+	#status_array = Array($AnimatedSprite2D.sprite_frames.get_animation_names())
+	#
+	#if status_array == null:
+		#print("顾客动画状态异常")
+	#
+	
+	#status_index = status_array[-1]
+	#print(status_index)
 	pass
 
 # 初始化实例初始位置信息与目标位置信息
-func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left: bool):
+func initialize(start_pos: Vector2, end_pos: Vector2):
 	position = start_pos
 	order_position = end_pos
-	
-#	根据实例生成方向播放对应朝向动画
-	if spawn_left == true:
-		$AnimatedSprite2D.play("walk_right")
-	else:
-		$AnimatedSprite2D.play("walk_left")
+	$AnimatedSprite2D.play("walk")
 
 func _process(delta: float) -> void:
 	if not order_position:
@@ -24,16 +30,9 @@ func _process(delta: float) -> void:
 		return
 	
 #	将实例移动至指定的订餐窗口
-#	第一阶段：实例移动至窗口上方位置
-	position = position.move_toward (Vector2(order_position.x, position.y), move_speed * delta)
-#	第二阶段：实例从窗口上方位置向下移动至窗口
-	if position.x == order_position.x:
-		position = position.move_toward(order_position, move_speed * delta)
-		var scale_val = 2 + 1 * delta
-		$AnimatedSprite2D.scale = Vector2(scale_val, scale_val)
+	position = position.move_toward(order_position, move_speed * delta)
 #	注意！还在开发：到达指定窗口后的具体行为
 	if position == order_position:
-		#queue_free()
 		pass
 
 func _physics_process(delta: float) -> void:
