@@ -3,15 +3,20 @@ extends Area2D
 var order_position	# 订餐位置
 var spawn_left: bool	# 实例朝向
 @export var move_speed := 200.0
+
 var favorite_food	# 喜欢的食物
 
-var client_tween
+var client_tween	#插值动画控制器
 
 func _ready() -> void:
 	client_tween = get_tree().create_tween()
 
 # 初始化实例初始位置信息与目标位置信息
 func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left_p: bool):
+	if start_pos == null or end_pos == null:
+		print("缺少顾客生成位置信息！")
+		return
+	
 #	初始化实例生成位置
 	position = start_pos
 #	初始化订餐位置
@@ -35,12 +40,9 @@ func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left_p: bool):
 	)
 
 func _process(delta: float) -> void:
-	if not order_position:
-		print("未正确设置目标订餐窗口！")
-		return
 ##	注意！还在开发：到达指定窗口后的具体行为
 	#if position == order_position:
-		#pass
+	pass
 
 func _physics_process(delta: float) -> void:
 	pass
