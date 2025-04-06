@@ -1,15 +1,7 @@
-res://fryer.gd
-res://assets/scence/fryer.tscn
 res://assets/scence/main.tscn
 res://assets/scence/client.tscn
 res://assets/scence/food.tscn
 res://assets/scence/hud.tscn
+res://assets/scence/测试场景.tscn
 res://assets/script/tool.gd
-res://food_packag.gd
-res://assets/scence/food_packag.tscn
-res://work_bench.gd
-res://assets/scence/work_bench.tscn
-res://assets/script/shelf.gd
-res://assets/scence/shelf.tscn
-res://cheese.gd
-res://assets/scence/cheese.tscn
+res://assets/scence/provide.gd

@@ -1,4 +1,3 @@
-#class_name MyToolClass
 extends Area2D
 
 # 工具类型
@@ -8,7 +7,6 @@ enum ToolTypeOption {
 	COMBINE = 2  # 组合类 
 }
 
-@export var tool_type: ToolTypeOption = ToolTypeOption.PROVIDE
 
 # 鼠标悬停视觉效果_悬停
 func _on_mouse_entered() -> void:
@@ -18,7 +16,6 @@ func _on_mouse_entered() -> void:
 func _on_mouse_exited() -> void:
 	self.scale = Vector2.ONE
 
-func tool_working():
-	if tool_type == null:
-		print("未设置工具类型！")
-		return
+func working():
+	push_error("抽象方法work()未在子类中实现！")
+	get_tree().quit()	# 开发时强制报错退出
