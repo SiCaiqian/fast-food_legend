@@ -1,6 +1,11 @@
 extends Node
 
 var scence_size	# 屏幕尺寸
+var order_window_pos = [
+	Vector2(1408, 1380),
+	Vector2(1920, 1380),
+	Vector2(2432, 1380),
+]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -28,15 +33,15 @@ func _on_start_timer_timeout():
 
 # 在一号窗口生成一个顾客实例
 func _on_order_window_1_client_generate():
-	$OrderWindow1.client_builder(Vector2(320, 400))
+	$OrderWindow1.client_builder(order_window_pos[0])
 
 # 在二号窗口生成一个顾客实例
 func _on_order_window_2_client_generate():
-	$OrderWindow2.client_builder(Vector2(640, 400))
+	$OrderWindow2.client_builder(order_window_pos[1])
 
 # 在三号窗口生成一个顾客实例
 func _on_order_window_3_client_generate():
-	$OrderWindow3.client_builder(Vector2(960, 400))
+	$OrderWindow3.client_builder(order_window_pos[2])
 
 # 一号窗口满客，停止在该窗口生成顾客实例
 func _on_order_window_1_fullhouse():

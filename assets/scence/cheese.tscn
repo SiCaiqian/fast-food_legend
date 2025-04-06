@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://gkqosff2b7vl"]
+
+[ext_resource type="Script" uid="uid://c2e3lpcjsn2rg" path="res://cheese.gd" id="1_lywtm"]
+[ext_resource type="Texture2D" uid="uid://bjmo8bkeswnq8" path="res://assets/imgs/作业工具/芝士盘子.png" id="2_th2h4"]
+[ext_resource type="Texture2D" uid="uid://bc280m3k6crd4" path="res://assets/imgs/作业工具/芝士片.png" id="3_wc806"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fd3i0"]
+radius = 95.0
+height = 246.0
+
+[node name="Cheese" type="Area2D"]
+script = ExtResource("1_lywtm")
+metadata/_edit_group_ = true
+
+[node name="Dish" type="Sprite2D" parent="."]
+texture = ExtResource("2_th2h4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-18, -26)
+texture = ExtResource("3_wc806")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-14, -55)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_fd3i0")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

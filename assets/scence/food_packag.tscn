@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dup4bp4hbyb13"]
+
+[ext_resource type="Script" uid="uid://ckeuro0ldsp87" path="res://assets/script/food_packag.gd" id="1_7r6gk"]
+[ext_resource type="Texture2D" uid="uid://chr5qg3tamar6" path="res://assets/imgs/作业工具/煎饼包装.png" id="2_luwjv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q2vsq"]
+radius = 112.0
+height = 368.0
+
+[node name="FoodPackag" type="Area2D"]
+script = ExtResource("1_7r6gk")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_luwjv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_q2vsq")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

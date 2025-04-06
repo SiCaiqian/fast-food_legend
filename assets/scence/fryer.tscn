@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7q8r8u13jsqn"]
+
+[ext_resource type="Script" uid="uid://7usygp4akcjx" path="res://assets/script/fryer.gd" id="1_wf0ir"]
+[ext_resource type="Texture2D" uid="uid://bnb5n1f4ydrdv" path="res://assets/imgs/作业工具/煎锅.png" id="2_lspg0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iu7h3"]
+radius = 312.0
+height = 1456.0
+
+[node name="Fryer" type="Area2D"]
+script = ExtResource("1_wf0ir")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_lspg0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-32, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_iu7h3")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

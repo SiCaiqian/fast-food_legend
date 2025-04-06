@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://yw8i0yp08kms"]
+
+[ext_resource type="Texture2D" uid="uid://cdm1n7kqstnsa" path="res://assets/imgs/作业工具/沙拉酱.png" id="2_lbn14"]
+
+[sub_resource type="GDScript" id="GDScript_o4kqs"]
+script/source = "@icon(\"res://assets/imgs/作业工具/沙拉酱.png\")
+extends \"res://assets/script/tool.gd\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hmt6"]
+size = Vector2(111, 380)
+
+[node name="SaladDressing" type="Area2D"]
+script = SubResource("GDScript_o4kqs")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_lbn14")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -1)
+shape = SubResource("RectangleShape2D_7hmt6")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

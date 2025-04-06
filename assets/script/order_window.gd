@@ -3,7 +3,7 @@ signal fullhouse	# 满客状态信号
 
 @export var client_scence: PackedScene	# 顾客场景类
 var scence_size	# 屏幕尺寸
-var window_pos	# 该窗口在主场景中的位置
+#var window_pos	# 该窗口在主场景中的位置
 var client_num:= 0	# 该窗口当前排队人数
 
 # Called when the node enters the scene tree for the first time.
@@ -38,9 +38,9 @@ func client_builder(oeder_window_pos: Vector2):
 #	随机决定一个生成位置
 	var spawn_pos = Vector2(
 #		x轴上确保实例在屏幕外生成
-		-50 if spawn_left else scence_size.x + 50,
+		896 if spawn_left else 2944,
 #		y轴上随机高度生成
-		randf_range(50, 300)
+		randf_range(1250, 1300)
 	)
 	
 #	将实例加入场景树

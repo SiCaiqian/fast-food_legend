@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://crw75m30eulgb"]
+
+[ext_resource type="Script" uid="uid://lerw11tijxeh" path="res://assets/script/shelf.gd" id="1_8npn2"]
+[ext_resource type="Texture2D" uid="uid://yvbu1te8xwft" path="res://assets/imgs/作业工具/汉堡皮陈列区.png" id="2_8s5m8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccx00"]
+size = Vector2(724, 119)
+
+[node name="Shelf" type="Area2D"]
+script = ExtResource("1_8npn2")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8s5m8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13.5)
+shape = SubResource("RectangleShape2D_ccx00")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

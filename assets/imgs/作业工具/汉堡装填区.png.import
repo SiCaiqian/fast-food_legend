@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxjk1x8w4dqbq"
-path="res://.godot/imported/client_sprite.png-5b7959794c6f4170dd95107e8f444b45.ctex"
+uid="uid://cn0eccehnjicu"
+path="res://.godot/imported/汉堡装填区.png-c2ecfa6b826addd5710d10fc99cba51d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/imgs/client_sprite/client_sprite.png"
-dest_files=["res://.godot/imported/client_sprite.png-5b7959794c6f4170dd95107e8f444b45.ctex"]
+source_file="res://assets/imgs/作业工具/汉堡装填区.png"
+dest_files=["res://.godot/imported/汉堡装填区.png-c2ecfa6b826addd5710d10fc99cba51d.ctex"]
 
 [params]
 

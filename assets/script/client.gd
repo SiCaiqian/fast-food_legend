@@ -11,7 +11,7 @@ var client_tween	#插值动画控制器
 func _ready() -> void:
 	client_tween = get_tree().create_tween()
 
-# 初始化实例初始位置信息与目标位置信息
+# 初始化实例初始并将实例移动至目标订餐窗口
 func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left_p: bool):
 	if start_pos == null or end_pos == null:
 		print("缺少顾客生成位置信息！")
@@ -35,6 +35,7 @@ func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left_p: bool):
 		$AnimatedSprite2D.play("walk_front")
 		)
 	client_tween.tween_property(self, "position", order_position, 1)
+	client_tween.parallel().tween_property(self, "scale", Vector2.ONE * 2, 1)
 	client_tween.tween_callback(func ():
 		$AnimatedSprite2D.play("idle")
 	)

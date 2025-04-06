@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhoaf37nhdjhc"]
+
+[ext_resource type="Script" uid="uid://b404d0nvd15ww" path="res://assets/script/tomato_sauce.gd" id="1_k1vm6"]
+[ext_resource type="Texture2D" uid="uid://dvx1qlxyg7ecg" path="res://assets/imgs/作业工具/番茄酱.png" id="2_4aplq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ny4pt"]
+size = Vector2(112, 384)
+
+[node name="TomatoSauce" type="Area2D"]
+script = ExtResource("1_k1vm6")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_4aplq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ny4pt")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

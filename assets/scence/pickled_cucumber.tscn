@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqfdjg43rqcu4"]
+
+[ext_resource type="Texture2D" uid="uid://cdqgr5skdhupo" path="res://assets/imgs/作业工具/腌黄瓜放置区.png" id="1_8qe2l"]
+[ext_resource type="Script" uid="uid://cu0x7dwhs0khh" path="res://assets/script/pickled_cucumber.gd" id="1_piw0s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_piw0s"]
+radius = 228.0
+height = 560.0
+
+[node name="PickledCucumber" type="Area2D"]
+script = ExtResource("1_piw0s")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8qe2l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(96, -58)
+shape = SubResource("CapsuleShape2D_piw0s")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

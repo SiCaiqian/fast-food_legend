@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn0eccehnjicu"
-path="res://.godot/imported/汉堡装填区.png-5c8da5d466776050459b766b100b0ee9.ctex"
+uid="uid://bc280m3k6crd4"
+path="res://.godot/imported/芝士片.png-7e1c85024e95e4b4c071b7e35486db99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/imgs/店面/汉堡装填区.png"
-dest_files=["res://.godot/imported/汉堡装填区.png-5c8da5d466776050459b766b100b0ee9.ctex"]
+source_file="res://assets/imgs/作业工具/芝士片.png"
+dest_files=["res://.godot/imported/芝士片.png-7e1c85024e95e4b4c071b7e35486db99.ctex"]
 
 [params]
 

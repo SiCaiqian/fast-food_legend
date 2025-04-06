@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqhb52msnmh5d"]
+
+[ext_resource type="Script" uid="uid://e617ndr0muro" path="res://assets/script/work_bench.gd" id="1_r2wqe"]
+[ext_resource type="Texture2D" uid="uid://cn0eccehnjicu" path="res://assets/imgs/作业工具/汉堡装填区.png" id="2_nhm08"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_127ab"]
+size = Vector2(473.641, 153.354)
+
+[node name="WorkBench" type="Area2D"]
+script = ExtResource("1_r2wqe")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_nhm08")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4.00374, -4.05337)
+rotation = -0.0698132
+shape = SubResource("RectangleShape2D_127ab")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
