@@ -1,15 +1,14 @@
 [gd_scene load_steps=19 format=3 uid="uid://8fys1mswxb58"]
 
 [ext_resource type="Script" uid="uid://b5e3be8uv6pj" path="res://assets/script/main.gd" id="1_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://cb664b5gvoy85" path="res://assets/imgs/背景/总背景.png" id="2_olo4i"]
+[ext_resource type="Texture2D" uid="uid://duexm1vfy6oia" path="res://assets/imgs/背景/外景 贴图.png" id="2_6ewpc"]
 [ext_resource type="PackedScene" uid="uid://d23nlcvb4rht3" path="res://assets/scence/food.tscn" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cxjsaqwwutysp" path="res://assets/imgs/背景/主场景.png" id="4_6skpb"]
 [ext_resource type="Script" uid="uid://cq0xn4elyrdsf" path="res://assets/script/order_window.gd" id="4_gmgkc"]
 [ext_resource type="PackedScene" uid="uid://d165c2c5l2k8a" path="res://assets/scence/client.tscn" id="5_lquwl"]
 [ext_resource type="Texture2D" uid="uid://cxhma0ag87jrt" path="res://assets/imgs/店面/门帘.png" id="6_6skpb"]
-[ext_resource type="Texture2D" uid="uid://dlc8he85vgooi" path="res://assets/imgs/店面/大理石桌面 纹理.png" id="7_6blae"]
 [ext_resource type="PackedScene" uid="uid://dnwck265g2l23" path="res://assets/scence/hud.tscn" id="7_olo4i"]
 [ext_resource type="PackedScene" uid="uid://yw8i0yp08kms" path="res://assets/scence/salad_dressing.tscn" id="8_0yb87"]
-[ext_resource type="Texture2D" uid="uid://yv5w3bqkutbh" path="res://assets/imgs/店面/桌下木饰面 纹理.png" id="8_b4606"]
 [ext_resource type="PackedScene" uid="uid://dhoaf37nhdjhc" path="res://assets/scence/tomato_sauce.tscn" id="9_0yb87"]
 [ext_resource type="PackedScene" uid="uid://4j6fqrkj680h" path="res://assets/scence/lettuce.tscn" id="10_dermf"]
 [ext_resource type="PackedScene" uid="uid://cqfdjg43rqcu4" path="res://assets/scence/pickled_cucumber.tscn" id="11_78slr"]
@@ -18,18 +17,20 @@
 [ext_resource type="PackedScene" uid="uid://bqhb52msnmh5d" path="res://assets/scence/work_bench.tscn" id="13_rx1qx"]
 [ext_resource type="PackedScene" uid="uid://crw75m30eulgb" path="res://assets/scence/shelf.tscn" id="14_rx1qx"]
 [ext_resource type="PackedScene" uid="uid://gkqosff2b7vl" path="res://assets/scence/cheese.tscn" id="15_lwpet"]
+[ext_resource type="PackedScene" uid="uid://cbterjlkwc6w8" path="res://assets/scence/cutting_board.tscn" id="18_6skpb"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_1bvp3")
 
-[node name="总背景" type="Sprite2D" parent="."]
-position = Vector2(1920, 1080)
-texture = ExtResource("2_olo4i")
+[node name="外景贴图" type="Sprite2D" parent="."]
+position = Vector2(1928, 807)
+texture = ExtResource("2_6ewpc")
 metadata/_edit_lock_ = true
 
 [node name="门帘" type="Sprite2D" parent="."]
 position = Vector2(1752, 1080)
 texture = ExtResource("6_6skpb")
+metadata/_edit_lock_ = true
 
 [node name="OrderWindow1" type="Node2D" parent="."]
 script = ExtResource("4_gmgkc")
@@ -49,6 +50,11 @@ client_scence = ExtResource("5_lquwl")
 
 [node name="ClientTimer3" type="Timer" parent="OrderWindow3"]
 
+[node name="主场景" type="Sprite2D" parent="."]
+position = Vector2(1920, 1080)
+texture = ExtResource("4_6skpb")
+metadata/_edit_lock_ = true
+
 [node name="Food" parent="." instance=ExtResource("3_h2yge")]
 position = Vector2(136, 104)
 
@@ -65,14 +71,6 @@ metadata/_edit_lock_ = true
 
 [node name="HUD" parent="." instance=ExtResource("7_olo4i")]
 visible = false
-
-[node name="大理石桌面纹理" type="Sprite2D" parent="."]
-position = Vector2(1936, 1840)
-texture = ExtResource("7_6blae")
-
-[node name="桌下木饰面纹理" type="Sprite2D" parent="."]
-position = Vector2(1896, 1960)
-texture = ExtResource("8_b4606")
 
 [node name="SaladDressing" parent="." instance=ExtResource("8_0yb87")]
 position = Vector2(192, 1736)
@@ -108,6 +106,10 @@ metadata/_edit_lock_ = true
 
 [node name="Cheese" parent="." instance=ExtResource("15_lwpet")]
 position = Vector2(486, 1902)
+metadata/_edit_lock_ = true
+
+[node name="CuttingBoard" parent="." instance=ExtResource("18_6skpb")]
+position = Vector2(3027, 1629)
 metadata/_edit_lock_ = true
 
 [connection signal="fullhouse" from="OrderWindow1" to="." method="_on_order_window_1_fullhouse"]

@@ -1,4 +1,5 @@
 CollisionShape2D
+AnimatedSprite2D
 Sprite2D
 Area2D
 Button
