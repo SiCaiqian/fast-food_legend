@@ -1,14 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://dm8kut8vuxbqw"]
+[gd_scene load_steps=5 format=3 uid="uid://dm8kut8vuxbqw"]
 
 [ext_resource type="Texture2D" uid="uid://cxbt5otwlqkxb" path="res://assets/imgs/测试贴图/食品组装/hamburger.png" id="1_1ucof"]
-[ext_resource type="Script" uid="uid://cn1amrgchmk2l" path="res://assets/scence/provide.gd" id="1_pukgi"]
+[ext_resource type="Script" uid="uid://cn1amrgchmk2l" path="res://assets/script/provide.gd" id="1_pukgi"]
+[ext_resource type="PackedScene" uid="uid://4j6fqrkj680h" path="res://assets/scence/lettuce.tscn" id="2_mrdja"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pukgi"]
 size = Vector2(192, 192)
 
 [node name="测试场景" type="Area2D"]
 script = ExtResource("1_pukgi")
-materials = ExtResource("1_1ucof")
+materials = ExtResource("2_mrdja")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -17,3 +18,5 @@ texture = ExtResource("1_1ucof")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_pukgi")
+
+[connection signal="input_event" from="." to="." method="working"]

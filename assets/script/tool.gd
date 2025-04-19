@@ -16,6 +16,6 @@ func _on_mouse_entered() -> void:
 func _on_mouse_exited() -> void:
 	self.scale = Vector2.ONE
 
-func working():
+func working(_viewport ,event, _shape_idx):
 	push_error("抽象方法work()未在子类中实现！")
 	get_tree().quit()	# 开发时强制报错退出

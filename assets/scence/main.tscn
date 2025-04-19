@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://8fys1mswxb58"]
+[gd_scene load_steps=20 format=3 uid="uid://8fys1mswxb58"]
 
 [ext_resource type="Script" uid="uid://b5e3be8uv6pj" path="res://assets/script/main.gd" id="1_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://duexm1vfy6oia" path="res://assets/imgs/背景/外景 贴图.png" id="2_6ewpc"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://crw75m30eulgb" path="res://assets/scence/shelf.tscn" id="14_rx1qx"]
 [ext_resource type="PackedScene" uid="uid://gkqosff2b7vl" path="res://assets/scence/cheese.tscn" id="15_lwpet"]
 [ext_resource type="PackedScene" uid="uid://cbterjlkwc6w8" path="res://assets/scence/cutting_board.tscn" id="18_6skpb"]
+[ext_resource type="PackedScene" uid="uid://dm8kut8vuxbqw" path="res://assets/scence/测试场景.tscn" id="19_6blae"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_1bvp3")
@@ -78,6 +79,7 @@ metadata/_edit_lock_ = true
 
 [node name="TomatoSauce" parent="." instance=ExtResource("9_0yb87")]
 position = Vector2(80, 1792)
+materials = ExtResource("9_0yb87")
 metadata/_edit_lock_ = true
 
 [node name="Lettuce" parent="." instance=ExtResource("10_dermf")]
@@ -112,6 +114,10 @@ metadata/_edit_lock_ = true
 position = Vector2(3027, 1629)
 metadata/_edit_lock_ = true
 
+[node name="测试场景" parent="." instance=ExtResource("19_6blae")]
+position = Vector2(482, 734)
+scale = Vector2(2.545, 2.545)
+
 [connection signal="fullhouse" from="OrderWindow1" to="." method="_on_order_window_1_fullhouse"]
 [connection signal="timeout" from="OrderWindow1/ClientTimer1" to="." method="_on_order_window_1_client_generate"]
 [connection signal="fullhouse" from="OrderWindow2" to="." method="_on_order_window_2_fullhouse"]
@@ -119,3 +125,4 @@ metadata/_edit_lock_ = true
 [connection signal="fullhouse" from="OrderWindow3" to="." method="_on_order_window_3_fullhouse"]
 [connection signal="timeout" from="OrderWindow3/ClientTimer3" to="." method="_on_order_window_3_client_generate"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
+[connection signal="input_event" from="TomatoSauce" to="TomatoSauce" method="working"]

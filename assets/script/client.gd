@@ -35,7 +35,7 @@ func initialize(start_pos: Vector2, end_pos: Vector2, spawn_left_p: bool):
 		$AnimatedSprite2D.play("walk_front")
 		)
 	client_tween.tween_property(self, "position", order_position, 1)
-	client_tween.parallel().tween_property(self, "scale", Vector2.ONE * 2, 1)
+	client_tween.parallel().tween_property(self, "scale", Vector2.ONE * 2.3, 1)
 	client_tween.tween_callback(func ():
 		$AnimatedSprite2D.play("idle")
 	)

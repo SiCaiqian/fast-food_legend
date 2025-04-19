@@ -1,5 +1,5 @@
 @icon("res://assets/imgs/作业工具/番茄酱.png")
-extends "res://assets/script/tool.gd"
+extends "res://assets/script/provide.gd"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,3 +9,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func working(_viewport ,event, _shape_idx):
+	super.working(_viewport ,event, _shape_idx)

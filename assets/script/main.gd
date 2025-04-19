@@ -2,9 +2,9 @@ extends Node
 
 var scence_size	# 屏幕尺寸
 var order_window_pos = [
-	Vector2(1408, 1380),
-	Vector2(1920, 1380),
-	Vector2(2432, 1380),
+	Vector2(1408, 1300),
+	Vector2(1920, 1300),
+	Vector2(2432, 1300),
 ]
 
 # Called when the node enters the scene tree for the first time.
